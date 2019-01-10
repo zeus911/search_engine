@@ -22,7 +22,7 @@ dataset=[]
 def get_word(query):
 # query = 'テキスト'
 
-    res = requests.get("https://www.xxxxxxxxxxxxxx"+ query)
+    res = requests.get("URL"+ query)
 
     soup = bs4.BeautifulSoup(res.text, "html.parser")
     elems = soup.select('.st')
